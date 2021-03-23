@@ -1,0 +1,25 @@
+<%- include('includes/header_admin.ejs') %>
+
+<h1>Ajouter un article</h1>
+
+<form action="/admin/addArticle" method="POST">
+    <div class="ui form">
+
+        <div class="field">
+            <label>Titre</label>
+            <input type="text" name="title">
+        </div>
+    
+        <div class="field">
+            <label>Text</label>
+            <textarea name="text"></textarea>
+        </div>
+
+        <button class="ui button" type="submit">Submit</button>
+
+    </div>
+  </form>
+
+
+
+<%- include('includes/footer_admin.ejs') %>
